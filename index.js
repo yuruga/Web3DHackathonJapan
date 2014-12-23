@@ -65,9 +65,16 @@ jThree( function( j3 ) {
 
 	function success(){
 		console.log('success');
+
+		$('#correct').show();
 	}
 	function fail(){
 		console.log('error');
+
+		$('#wrong').show();
+	}
+	function imgClear(){
+		$('#correct, #wrong').hide();
 	}
 
 	function spring(targets, mass){
