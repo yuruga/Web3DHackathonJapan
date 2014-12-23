@@ -1,0 +1,20 @@
+{
+  "name": "Web3DHackathonJapan",
+  "main": "index.js",
+  "version": "0.0.0",
+  "homepage": "https://github.com/yuruga/Web3DHackathonJapan",
+  "authors": [
+    "xlune <ichikawa@xlune.com>"
+  ],
+  "moduleType": [
+    "es6"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
