@@ -30,8 +30,8 @@ jThree( function( j3 ) {
 	    console.log("pound")
 	    var kine = j3("#kine_mesh");
 	    console.log(kine)
-	    kine.animate({translateY:-20},150, "easeInQuad", function(){
-	        j3(this).animate({translateY:20},300, "easeOutQuad");
+	    kine.animate({positionY:-20},150, "easeInQuad", function(){
+	        j3(this).animate({positionY:0},300, "easeOutQuad");
 	    })
 
 	    if(poundTarget == "mochi")
