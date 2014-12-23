@@ -1,19 +1,15 @@
 <goml>
 	<head>
 	   <import>
-	        <audio controls>
+	        <audio controls autoplay>
                 <source src="audio/bgm.mp3" />
                 <source src="audio/bgm.ogg" />
             </audio>
-            <audio controls>
+            <audio controls loop>
                 <source src="audio/cat.mp3" />
                 <source src="audio/cat.ogg" />
             </audio>
-	    </import>
-	    <txr id="" src="img/wood.png" param="" onLoad=""/>
-		<rdr frame="body" camera="camera:first" param="antialias: true; clearColor: #fff;"/>
-		<geo id="hoge" type="Cube" param="3 3 3" />
-		<mtl id="fuga" type="MeshPhong" param="map:txr; specular: #fff; ambient: #300;" />
+		</import>
 
 		<geo id="ground" type="Plane" param="10 10" />
 		<geo id="kine" type="Cylinder" param="0.3 2 7 3" />
@@ -30,17 +26,15 @@
 		<scene>
 		    <mesh geo="#ground" mtl="#m-grass" style="scale:10;rotateX:1.63;" />
 			<obj id="usu" style="translateY:3;">
-			    <mesh geo="#usu" audio="audio" mtl="#m-wood" style="translateY:0;" />
-			    <mesh geo="#neko" mtl="#m-neko" style="translateY:5;" />
+			    <mesh geo="#usu" audio="audio:first" mtl="#m-wood" style="translateY:0;" />
+			    <mesh geo="#neko" audio="audio:last" mtl="#m-neko" style="translateY:5;" />
 			    <mesh geo="#mochi" mtl="#m-mochi" style="translateY:3;" />
 			</obj>
 			<obj id="me" style="">
 			    <mesh id="kine_mesh" geo="#kine" mtl="#m-wood" style="" />
 			</obj>
-			<camera style="cameraFar: 100000; position: 0 5000 0; lookAt: 0 0 3;" />
-			
-			
-			
+			<camera style="cameraFar: 100000; position: 0 3000 0; lookAt: 0 0 3;" />
+
 			<light type="Amb" style="lightColor: #222;" />
 			<light type="Dir" style="position: 1 3 5;" />
 		</scene>
