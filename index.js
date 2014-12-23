@@ -31,7 +31,8 @@ jThree( function( j3 ) {
 	    var kine = j3("#kine_mesh");
 	    console.log(kine)
 	    kine.animate({positionY:-20},150, "easeInQuad", function(){
-	        j3(this).animate({positionY:-5},300, "easeOutQuad");
+	        //j3(this).animate({positionY:-5},300, "easeOutQuad");
+	        j3(this).positionY(-1);
 	    })
 
 	    if(poundTarget == "mochi")
