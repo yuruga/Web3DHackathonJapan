@@ -16,9 +16,10 @@
 		<geo id="usu" type="Cylinder" param="3 3 6 8" />
 		<geo id="neko" type="Sphere" param="1 0.6" />
 		<geo id="mochi" type="Cylinder" param="1 1 0.5 8" />
+		<txr id="" src="img/wood.png" param="" onLoad=""/>
         <mtl id="m-grass" type="MeshBasic" param="color:#0F0;side:1;" />
         <mtl id="m-mochi" type="MeshLambert" param="color:#FF0;" />
-        <mtl id="m-wood" type="MeshLambert" param="color:#00F;" />
+        <mtl id="m-wood" type="MeshLambert" param="map:txr" />
         <mtl id="m-neko" type="MeshLambert" param="color:#000;" />
 		<rdr frame="body" camera="camera:first" param="antialias: true; clearColor: #fff;"/>
 	</head>
