@@ -10,3 +10,6 @@ body {
   -webkit-user-select: none;
   padding: 0 20px;
 }
+
+#correct,
+#wrong{ display: none;}
